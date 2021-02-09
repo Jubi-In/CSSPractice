@@ -1,0 +1,17 @@
+.father {
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    flex-wrap: nowrap;
+}
+
+.child {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
