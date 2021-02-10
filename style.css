@@ -1,21 +1,21 @@
-.father {
-    display: flex;
-    justify-content: space-around;
-    align-content: space-between;
-    flex-wrap: nowrap;
+.grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
 }
 
-.child {
-    flex-basis: 300px;
-    background-color: blueviolet;
-    color: white;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header {
+    background-color: black;
+    grid-column-start: 1;
+    grid-column-end: 5;
 }
-
-.child:nth-child(2) {
-    background:#000;
-    flex-grow: 1;
+.content {
+    background-color: darkorange;
+}
+.nav {
+    background-color: darkslategray;
+}
+.footer {
+    background-color: darkseagreen;
 }
