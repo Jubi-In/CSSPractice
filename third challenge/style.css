@@ -1,0 +1,81 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  background-color:#DDE1D4;
+  padding:15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin:0 auto;
+}
+
+.grid {
+    display: grid;
+    height: 50vh;
+    grid-template: 
+    "left__top left__top right__top right__top" 2fr
+    "left__bottom left__bottom right__bottom1 right__bottom2" 1fr
+    "left__bottom left__bottom right__bottom3 right__bottom4" 1fr;
+}
+
+span {
+    font-size: 35px;
+    color: #F4480C;
+    font-weight: 400;
+}
+
+.left__bottom span,
+.right__top span,
+.right__bottom2 span,
+.right__bottom4 span{
+    color: #FCFDFD
+}
+
+.left__top {
+    display: grid;
+    background-color: #DAE7DE;
+    grid-area: left__top;
+    place-items: center;
+}
+
+.left__bottom {
+    display: grid;
+    background-color: #F44607;
+    grid-area: left__bottom;
+    place-items: center;
+}
+
+.right__top {
+    display: grid;
+    background-color: #008A69;
+    grid-area: right__top;
+    place-items: center;
+}
+
+.right__bottom1 {
+    display: grid;
+    background-color: #F7ABC5;
+    grid-area: right__bottom1;
+    place-items: center;
+}
+
+.right__bottom2 {
+    display: grid;
+    background-color: #5F5FA9;
+    grid-area: right__bottom2;
+    place-items: center;
+}
+
+.right__bottom3 {
+    display: grid;
+    background-color: #FFC128;
+    grid-area: right__bottom3;
+    place-items: center;
+}
+
+.right__bottom4 {
+    display: grid;
+    background-color: #F97374;
+    grid-area: right__bottom4;
+    place-items: center;
+}
