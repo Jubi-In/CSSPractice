@@ -34,6 +34,7 @@ body {
     align-items: center;
     font-style: italic;
     font-weight: bold;
+    font-size: 2vw;
 }
 
 .leftbar {
@@ -43,7 +44,7 @@ body {
     color: white;
     width: 40px;
     font-style: italic;
-    font-size: 10px;
+    font-size: 1vh;
     font-weight: bold;
 }
 
@@ -85,7 +86,7 @@ body {
     color: white;
     width: 40px;
     font-style: italic;
-    font-size: 10px;
+    font-size: 1vh;
     font-weight: bold;
     background-color: #3a352e;
     align-items: center;
@@ -123,6 +124,7 @@ body {
     align-items: center;
     font-style: italic;
     font-weight: bold;
+    font-size: 2vw;
 }
 
 .bg {
@@ -130,18 +132,23 @@ body {
     width: 100%;
 }
 
-.image:nth-child(1) {
-    width: 50%;
-    background-image: url("https://pbs.twimg.com/media/EuPqrFeUcAAkbRy?format=jpg&name=4096x4096");
-    background-size: cover;
-    background-position: center;
+.image {
+    width: 100%;
+    background-image: url("https://pbs.twimg.com/media/EuPqrFeUcAAkbRy?format=jpg&name=4096x4096"), url("https://pbs.twimg.com/media/EuPqrFcU4AIMTDU?format=jpg&name=4096x4096");
+    background-size: 50%, 50%;
+    background-position: 0, 100%;
+    background-repeat: no-repeat;
     opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.image:nth-child(2) {
-    width: 50%;
-    background-image: url("https://pbs.twimg.com/media/EuPqrFcU4AIMTDU?format=jpg&name=4096x4096");
-    background-size: cover;
-    background-position: center;
-    opacity: 0.8;
+.image span{
+    display: flex;
+    font-size: 10vw;
+    color: white;
+    font-weight: 900;
+    font-style: italic;
 }
