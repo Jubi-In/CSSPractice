@@ -1,0 +1,221 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    border: 3px solid black;
+}
+
+nav {
+    display: flex;
+    grid-column: 1 / 4;
+    grid-row: 1 / -1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-right: 3px solid black;
+    line-height: 1.2;
+    font-size: 1vw;
+}
+
+section:nth-child(1) {
+    margin-top: 10px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+nav h1, nav h5 {
+    margin-left: 20px;
+}
+
+nav h1 {
+    font-size: 2.2vw;
+}
+
+.category {
+    width: 100%;
+    border-bottom: 3px solid black;
+    font-size: 1.2vw;
+}
+
+.category h3 {
+    padding: 8px;
+    padding-left: 20px;
+    border-top: 3px solid black;
+}
+
+.category h3:hover {
+    background-color: lightgray;
+}
+
+section:nth-child(2) {
+    display: flex;
+    height: 30%; 
+    margin-left: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+section:nth-child(2) h2 {
+    font-weight: 500;
+}
+main {
+    display: flex;
+    grid-column: 4 / 7;
+    grid-row: 1 / -3;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    line-height: 1.2;
+}
+
+main section {
+    margin: 20px;
+    font-size: 1vw;
+}
+
+main h1 {
+    font-size: 3vw;
+    width: 60%;
+}
+
+main p {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.service {
+    display: flex;
+    grid-column: 4 / 7;
+    grid-row: -3 / -1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-right: 3px solid black;
+    padding: 20px;
+    font-size: 1vw;
+    line-height: 1.2;
+}
+
+.service h1 {
+    font-size: 2.2vw;
+}
+
+.image:nth-child(4) {
+    grid-column: 7 / 10;
+    grid-row: 1 / -3;
+    background-image: url("https://i.pinimg.com/originals/35/71/33/357133d0083feb830bf47650fe31335e.jpg");
+    background-size:cover;
+    background-position:center;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+}
+
+.image:nth-child(5) {
+    grid-column: 10 / -1;
+    grid-row: 1 / 5;
+    background-image: url("https://m1.daumcdn.net/cfile80/image/99A5453D5A7D19A82612CD");
+    background-size:cover;
+    background-position:center;
+    border-bottom: 3px solid black;
+}
+
+.image:nth-child(6) {
+    grid-column: 10 / -2;
+    grid-row: 5 / 7;
+    background-image: url("https://zeden.co.kr/wp-content/uploads/2020/10/jetpack-portfolio-7162002-1280x1920.jpg");
+    background-size:cover;
+    background-position:center;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+}
+
+.image:nth-child(7) {
+    grid-column: -2 / -1;
+    grid-row: 5 / 6;
+    background-image: url("https://t1.daumcdn.net/cfile/tistory/991F09375B18E5332A");
+    background-size:cover;
+    background-position:center;
+    border-bottom: 3px solid black;
+}
+
+.image:nth-child(8) {
+    grid-column: -2 / -1;
+    grid-row: 6 / 7;
+    background-image: url("https://cdn.indiepost.co.kr/uploads/images/2019/08/01/d95Iei-700x539.jpeg");
+    background-size:cover;
+    background-position:center;
+    border-bottom: 3px solid black;
+}
+
+.image:nth-child(9) {
+    grid-column: 10 / -3;
+    grid-row: 7 / 9;
+    background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/bright-living-room-with-a-large-house-plant-copy-royalty-free-image-1580854667.jpg?crop=0.479xw:0.998xh;0.0241xw,0&resize=480:*");
+    background-size:cover;
+    background-position:center;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+}
+
+.image:nth-child(10) {
+    grid-column: -3 / -1;
+    grid-row: 7 / 9;
+    background-image: url("https://img6.yna.co.kr/etc/inner/KR/2018/10/03/AKR20181003044700005_01_i_P2.jpg");
+    background-size:cover;
+    background-position:center;
+    border-bottom: 3px solid black;
+}
+
+.image:nth-child(11) {
+    grid-column: 7 / 8;
+    grid-row: 9 / -1;
+    background-image: url("https://cdn.snubes.com/wp-content/uploads/2019/10/back-office-group.jpg");
+    background-size:cover;
+    background-position:center;
+    border-right: 3px solid black;
+}
+
+.image:nth-child(12) {
+    grid-column: 8 / 9;
+    grid-row: 9 / -2;
+    background-image: url("https://www.techbooky.com/wp-content/uploads/2019/08/dexus-office-space.jpg");
+    background-size:cover;
+    background-position:center;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.image:nth-child(13) {
+    grid-column: 8 / 9;
+    grid-row: -2 / -1;
+    background-image: url("https://media.istockphoto.com/photos/modern-office-room-with-glass-walls-picture-id637249110?k=6&m=637249110&s=170667a&w=0&h=8_okdCT1Ct7EW2iEpTT-Z6gMy_5aHf6_0BAcz_frizw=");
+    background-size:cover;
+    background-position:center;
+    border-right: 3px solid black;
+}
+
+.image:nth-child(14) {
+    grid-column: 9 / -1;
+    grid-row: 9 / -1;
+    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWptHL?ver=f9a8&q=90&m=2&h=768&w=1024&b=%23FFFFFFFF&aim=true");
+    background-size:cover;
+    background-position:center;
+    border-right: 3px solid black;
+}
